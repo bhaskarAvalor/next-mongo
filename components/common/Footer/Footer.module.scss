@@ -1,0 +1,76 @@
+@import "/styles/variables.scss";
+
+.container {
+  // background: #000;
+  padding: 2rem;
+  // padding-bottom: 0;
+  // margin-top: 3rem;
+  margin-top: 0;
+  padding-top: 4rem;
+  // color: #fff;
+  .brandContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: $mobileResolution) {
+    padding: 2rem 0;
+  }
+  .brandLogo {
+    width: 7rem;
+    display: block;
+    @media screen and (max-width: $mobileResolution) {
+      // margin-bottom: 2rem;
+    }
+  }
+  .logoWrapper {
+    display: inline-block;
+    @media screen and (max-width: $mobileResolution) {
+      max-width: 90px;
+      margin-left: 2rem;
+    }
+  }
+  .links {
+    font-size: 1rem;
+    display: inline-block;
+    letter-spacing: 0.03em;
+    margin: 0 1rem;
+    @media screen and (max-width: $mobileResolution) {
+      font-size: 0.9rem;
+      margin: 0.5rem 1rem;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    opacity: 0.4;
+  }
+  .socialWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    @media screen and (max-width: $mobileResolution) {
+      flex-direction: column;
+    }
+    .socialLinks {
+      display: inline-flex;
+      flex-direction: row;
+      margin-left: 0.7rem;
+      @media screen and (max-width: $mobileResolution) {
+        margin-top: 0.8rem;
+      }
+      > a {
+        margin: 0 0.5rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
